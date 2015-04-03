@@ -79,11 +79,11 @@
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgj-JU-x9a">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="7" y="-6" width="106" height="192"/>
+                                    <rect key="frame" x="7" y="127" width="106" height="59"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sDm-me-WPk">
@@ -94,6 +94,30 @@
                                     <rect key="frame" x="7" y="324" width="355" height="30"/>
                                 </variation>
                             </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bw8-cL-PQu">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="7" y="72" width="157" height="121"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FmY-Lt-ua3">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.1386737233" blue="0.15563749230000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Send Name">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="7" y="194" width="157" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="nameLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cuQ-Eh-lCs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -103,6 +127,8 @@
                                 <exclude reference="K01-0c-hEH"/>
                                 <exclude reference="Wgj-JU-x9a"/>
                                 <exclude reference="sDm-me-WPk"/>
+                                <exclude reference="bw8-cL-PQu"/>
+                                <exclude reference="FmY-Lt-ua3"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -112,13 +138,18 @@
                                 <include reference="K01-0c-hEH"/>
                                 <include reference="Wgj-JU-x9a"/>
                                 <include reference="sDm-me-WPk"/>
+                                <include reference="bw8-cL-PQu"/>
+                                <include reference="FmY-Lt-ua3"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="entermessagetextfield" destination="sDm-me-WPk" id="uv7-P1-0xH"/>
+                        <outlet property="enternametextfield" destination="8Og-Lz-1F6" id="PHU-DU-ro6"/>
                         <outlet property="mailButton" destination="K01-0c-hEH" id="gka-hM-EVU"/>
                         <outlet property="messagelabel" destination="Wgj-JU-x9a" id="cIA-Hj-qoP"/>
+                        <outlet property="nameButton" destination="FmY-Lt-ua3" id="IJt-4J-cf8"/>
+                        <outlet property="nameText" destination="bw8-cL-PQu" id="hYh-TH-mv9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var enternametextfield: UITextField!
     @IBOutlet weak var entermessagetextfield: UITextField!
     @IBOutlet weak var mailButton: UIButton!
+    @IBOutlet weak var nameButton: UIButton!
+    @IBOutlet weak var nameText: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,5 +40,15 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func nameLabel(sender: UIButton) {
+        nameText.hidden = false
+        nameText.text = enternametextfield.text
+        
+        enternametextfield.text = ""
+        enternametextfield.resignFirstResponder()
+        
+        nameButton.setTitle("Name sent", forState: UIControlState.Normal)
+        
+    }
 }
 
