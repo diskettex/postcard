@@ -13,6 +13,8 @@
 		BE9F13F81ACEDD4F00020F06 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9F13F71ACEDD4F00020F06 /* Images.xcassets */; };
 		BE9F13FB1ACEDD4F00020F06 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE9F13F91ACEDD4F00020F06 /* LaunchScreen.xib */; };
 		BE9F14071ACEDD4F00020F06 /* project_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F14061ACEDD4F00020F06 /* project_1Tests.swift */; };
+		BE9F14121ACEE33A00020F06 /* Unknown.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BE9F14101ACEE33A00020F06 /* Unknown.jpg */; };
+		BE9F14131ACEE33A00020F06 /* a3665280869_10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BE9F14111ACEE33A00020F06 /* a3665280869_10.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		BE9F14001ACEDD4F00020F06 /* project 1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "project 1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9F14051ACEDD4F00020F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE9F14061ACEDD4F00020F06 /* project_1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project_1Tests.swift; sourceTree = "<group>"; };
+		BE9F14101ACEE33A00020F06 /* Unknown.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Unknown.jpg; sourceTree = "<group>"; };
+		BE9F14111ACEE33A00020F06 /* a3665280869_10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = a3665280869_10.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 		BE9F13EE1ACEDD4F00020F06 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BE9F14101ACEE33A00020F06 /* Unknown.jpg */,
+				BE9F14111ACEE33A00020F06 /* a3665280869_10.jpg */,
 				BE9F13EF1ACEDD4F00020F06 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -192,8 +198,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE9F14131ACEE33A00020F06 /* a3665280869_10.jpg in Resources */,
 				BE9F13F61ACEDD4F00020F06 /* Main.storyboard in Resources */,
 				BE9F13FB1ACEDD4F00020F06 /* LaunchScreen.xib in Resources */,
+				BE9F14121ACEE33A00020F06 /* Unknown.jpg in Resources */,
 				BE9F13F81ACEDD4F00020F06 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
